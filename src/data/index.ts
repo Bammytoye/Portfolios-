@@ -45,31 +45,34 @@ export type NavLink = (typeof NAV_LINKS)[number];
 export const SKILLS: Record<string, SkillItem[]> = {
     Frontend: [
         { name: "React / Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
+        { name: "TypeScript", level: 70 },
         { name: "Tailwind CSS", level: 92 },
-        { name: "Three.js / WebGL", level: 78 },
+        { name: "Vue", level: 78 },
+        { name: "HTML", level: 78 },
         { name: "CSS Animations", level: 88 },
     ],
     Backend: [
         { name: "Node.js / Express", level: 91 },
         { name: "PostgreSQL", level: 85 },
         { name: "MongoDB", level: 80 },
-        { name: "GraphQL", level: 75 },
-        { name: "Docker / DevOps", level: 72 },
+        { name: "GraphQL", level: 50 },
+        { name: "Laravel", level: 50 },
+        { name: "SQL", level: 70 },
     ],
 };
 
 export const TECH_BADGES = [
     "React",
     "Next.js",
+    "JavaScript",
     "TypeScript",
     "Node.js",
     "PostgreSQL",
     "MongoDB",
-    "Docker",
-    "Redis",
+    "SQL",
+    "Vue",
     "GraphQL",
-    "Three.js",
+    "Laravel",
     "Tailwind",
     "AWS",
 ];
@@ -171,16 +174,16 @@ export const TIMELINE: TimelineItem[] = [
 // ─── Contact ──────────────────────────────────────────────────────────────────
 
 export const CONTACT_INFO: ContactInfo[] = [
-    { icon: "📧", label: "Email", val: "hello@devportfolio.io" },
-    { icon: "💼", label: "LinkedIn", val: "linkedin.com/in/devportfolio" },
-    { icon: "💻", label: "GitHub", val: "github.com/devportfolio" },
+    { icon: "📧", label: "Email", val: "bamigbalatoyese@gmail.com" },
+    { icon: "💼", label: "LinkedIn", val: "linkedin.com/in/bamigbalaEzekiel" },
+    { icon: "💻", label: "GitHub", val: "github.com/bammytoye" },
     { icon: "📍", label: "Location", val: "Remote — Worldwide" },
 ];
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
 
 export const STATS = [
-    { n: 5, suf: "+", label: "Years Exp." },
+    { n: 3, suf: "+", label: "Years Exp." },
     { n: 50, suf: "+", label: "Projects Done" },
-    { n: 30, suf: "+", label: "Happy Clients" },
+    { n: 5, suf: "+", label: "Happy Clients" },
 ];

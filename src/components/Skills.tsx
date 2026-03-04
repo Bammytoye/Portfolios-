@@ -30,7 +30,7 @@ const Skills: React.FC = () => {
                             maxWidth: '500px', margin: '1rem auto 0',
                         }}
                     >
-                        A curated set of tools and technologies I use to build exceptional products.
+                        A set of tools and technologies I use to build exceptional products.
                     </p>
                 </div>
 

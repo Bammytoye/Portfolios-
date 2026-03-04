@@ -53,11 +53,11 @@ const Hero: React.FC = () => {
 
                     {/* Left – text */}
                     <div className="lg:w-7/12" style={{ animation: 'slideUp .8s ease forwards' }}>
-                        <div className="tag mb-6">Available for work</div>
+                        <div className="tag my-10">Available for work</div>
 
                         <h1
                             style={{
-                                fontSize: 'clamp(2.5rem, 6vw, 5rem)',
+                                fontSize: 'clamp(60px, 6vw, 5rem)',
                                 fontWeight: 800,
                                 lineHeight: 1.05,
                                 marginBottom: '1rem',
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
                             }}
                         >
                             Full-stack developer crafting performant, visually stunning web experiences.
-                            From pixel-perfect frontends to robust backend architectures.
+                            From pixel-perfect front-ends to robust backend architectures.
                         </p>
 
                         <div className="flex flex-wrap gap-4 mb-10">
@@ -105,6 +105,7 @@ const Hero: React.FC = () => {
                                     >
                                         <Counter end={stat.n} suffix={stat.suf} />
                                     </div>
+                                    
                                     <div
                                         style={{
                                             fontSize: '0.75rem',

@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                     }}
                 >
                     <span style={{ color: 'var(--accent2)' }}>&lt;</span>
-                    DEV
+                    DEV ZEKE
                     <span style={{ color: 'var(--accent2)' }}>/&gt;</span>
                 </div>
 

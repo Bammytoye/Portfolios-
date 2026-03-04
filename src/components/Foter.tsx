@@ -11,9 +11,9 @@ const Footer: React.FC = () => (
             }}
         >
             <span style={{ color: 'var(--accent2)' }}>&lt;</span>
-            DEV
+            DEV ZEKE
             <span style={{ color: 'var(--accent2)' }}>/&gt;</span>
-            {' '}— Crafted with ❤️ & a lot of ☕ — {new Date().getFullYear()}
+            {' '} {new Date().getFullYear()}
         </p>
     </footer>
 );
