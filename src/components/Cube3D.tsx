@@ -1,7 +1,7 @@
 import React from 'react';
 
 const faces = ['front', 'back', 'left', 'right', 'top', 'bottom'] as const;
-const emojis = ['⚡', '🚀', '💡', '🔮', '🌐', '⚙️'];
+const emojis = ['⚡', '🚀', '💡', '🧑‍💻', '🌐', '✨'];
 
 const Cube3D: React.FC = () => (
     <div className="cube-wrapper">

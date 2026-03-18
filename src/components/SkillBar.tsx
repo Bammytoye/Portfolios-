@@ -26,36 +26,23 @@ const SkillBar: React.FC<SkillBarProps> = ({ name, level, color = '#00ffe0' }) =
     }, []);
 
     return (
-        <div ref={ref} className="mb-5">
+        <div ref={ref} className="mb-6">
+            {/* Label and percentage - using Tailwind */}
             <div className="flex justify-between mb-2">
-                <span
-                    style={{
-                        fontFamily: "'Space Mono', monospace",
-                        fontSize: '0.8rem',
-                        color: '#e2e8f0',
-                    }}
-                >
+                <span className="font-mono text-sm text-slate-100">
                     {name}
                 </span>
                 <span
-                    style={{
-                        fontFamily: "'Space Mono', monospace",
-                        fontSize: '0.75rem',
-                        color,
-                    }}
+                    className="font-mono text-xs"
+                    style={{ color }}
                 >
                     {level}%
                 </span>
             </div>
 
-            <div
-                style={{
-                    height: '4px',
-                    background: 'rgba(255,255,255,.06)',
-                    borderRadius: '2px',
-                    overflow: 'hidden',
-                }}
-            >
+            {/* Skill bar container - using Tailwind */}
+            <div className="h-1 bg-white/6 rounded-sm overflow-hidden">
+                {/* Animated skill bar - using inline styles for gradient */}
                 <div
                     style={{
                         height: '100%',

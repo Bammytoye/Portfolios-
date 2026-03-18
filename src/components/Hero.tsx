@@ -5,7 +5,7 @@ import TypeWriter from '../components/TypeWriter';
 import Counter from '../components/Counter';
 import { STATS } from '../data';
 
-const TYPEWRITER_WORDS = ['Beautiful UIs', 'Scalable APIs', 'Full-Stack Apps', '3D Experiences'];
+const TYPEWRITER_WORDS = ['Beautiful UIs', 'Robust Backends'];
 
 const Hero: React.FC = () => {
     const scrollTo = (id: string): void => {
@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
                                     >
                                         <Counter end={stat.n} suffix={stat.suf} />
                                     </div>
-                                    
+
                                     <div
                                         style={{
                                             fontSize: '0.75rem',
@@ -123,7 +123,7 @@ const Hero: React.FC = () => {
 
                     {/* Right – 3D visual */}
                     <div
-                        className="lg:w-5/12 flex flex-col items-center gap-8"
+                        className="lg:w-5/12 hidden lg:flex flex-col items-center gap-8"
                         style={{ animation: 'slideUp 1s ease .2s both' }}
                     >
                         {/* Avatar with orbit rings */}

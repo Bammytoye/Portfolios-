@@ -45,27 +45,43 @@ export type NavLink = (typeof NAV_LINKS)[number];
 export const SKILLS: Record<string, SkillItem[]> = {
     Frontend: [
         { name: "React / Next.js", level: 95 },
-        { name: "TypeScript", level: 70 },
-        { name: "Tailwind CSS", level: 92 },
+        { name: "JavaScript / TypeScript", level: 82 },
+        { name: "Tailwind CSS / CSS", level: 92 },
+        { name: "HTML5", level: 95 },
+        { name: "CSS Animations / Frame Motion", level: 88 },
+        { name: "Redux / Zustand", level: 75 },
+        { name: "Figma / UI Prototyping", level: 65 },
         { name: "Vue", level: 78 },
-        { name: "HTML", level: 78 },
-        { name: "CSS Animations", level: 88 },
     ],
+
     Backend: [
-        { name: "Node.js / Express", level: 91 },
+        { name: "Node.js / Express", level: 95 },
         { name: "PostgreSQL", level: 85 },
         { name: "MongoDB", level: 80 },
-        { name: "GraphQL", level: 50 },
-        { name: "Laravel", level: 50 },
-        { name: "SQL", level: 70 },
+        { name: "GraphQL", level: 70 },
+        { name: "REST API Design", level: 85 },
+        { name: "SQL", level: 85 },
+        { name: "Authentication (JWT / OAuth / Firebase)", level: 70 },
+    ],
+    
+    Tools: [
+        { name: "Git / GitHub", level: 90 },
+        { name: "VS Code ", level: 85 },
+        { name: "Postman / Insomnia", level: 80 },
+        { name: "ESLint / Prettier ", level: 70 },
+        { name: "Figma / Adobe XD", level: 65 },
+    ],
+    Other: [
+        { name: "WebSockets / Socket.io", level: 65 },
+        { name: "Realtime Apps", level: 60 },
+        { name: "SEO & Performance Optimization", level: 70 },
+        { name: "Testing & Debugging", level: 70 },
     ],
 };
 
 export const TECH_BADGES = [
-    "React",
-    "Next.js",
-    "JavaScript",
-    "TypeScript",
+    "React / Nextjs",
+    "JavaScript / TypeScript",
     "Node.js",
     "PostgreSQL",
     "MongoDB",
@@ -74,7 +90,9 @@ export const TECH_BADGES = [
     "GraphQL",
     "Laravel",
     "Tailwind",
-    "AWS",
+    "Postman / Insomnia",
+    "Figma",
+    "Git",
 ];
 
 // ─── Projects ─────────────────────────────────────────────────────────────────
@@ -176,7 +194,7 @@ export const TIMELINE: TimelineItem[] = [
 export const CONTACT_INFO: ContactInfo[] = [
     { icon: "📧", label: "Email", val: "bamigbalatoyese@gmail.com" },
     { icon: "💼", label: "LinkedIn", val: "linkedin.com/in/bamigbalaEzekiel" },
-    { icon: "💻", label: "GitHub", val: "github.com/bammytoye" },
+    { icon: "💻", label: "GitHub", val: "github.com/Bammytoye" },
     { icon: "📍", label: "Location", val: "Remote — Worldwide" },
 ];
 
@@ -184,6 +202,6 @@ export const CONTACT_INFO: ContactInfo[] = [
 
 export const STATS = [
     { n: 3, suf: "+", label: "Years Exp." },
-    { n: 50, suf: "+", label: "Projects Done" },
+    { n: 13, suf: "+", label: "Projects Done" },
     { n: 5, suf: "+", label: "Happy Clients" },
 ];
