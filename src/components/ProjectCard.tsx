@@ -1,5 +1,7 @@
-import React from 'react';
-import { Project } from '../data';
+import React from 'react'
+import { Project } from '../data'
+import { motion } from "framer-motion"
+import { ExternalLink, Github } from "lucide-react"
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
     <div
@@ -73,19 +75,53 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
             ))}
         </div>
 
-        <a
-            href={project.link}
-            style={{
-                fontFamily: "'Space Mono', monospace",
-                fontSize: '0.7rem', letterSpacing: '0.1em',
-                color: project.color, textDecoration: 'none',
-                display: 'flex', alignItems: 'center', gap: '0.5rem',
-                textTransform: 'uppercase',
-            }}
-            className="hover:underline"
-        >
-            View Project <span>→</span>
-        </a>
+        <div className='flex justify-between items-center'>
+            {/* Live Project Link */}
+            <motion.a
+                href={project.LiveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05, x: 3 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                style={{
+                    fontFamily: "'Space Mono', monospace",
+                    fontSize: '0.7rem',
+                    letterSpacing: '0.1em',
+                    color: project.color,
+                    textDecoration: 'none',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    textTransform: 'uppercase',
+                }}
+                className="hover:underline"
+            >
+                View Project <ExternalLink size={14} />
+            </motion.a>
+
+            {/* GitHub Link */}
+            <motion.a
+                href={project.GitLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05, x: 3 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                style={{
+                    fontFamily: "'Space Mono', monospace",
+                    fontSize: '0.7rem',
+                    letterSpacing: '0.1em',
+                    color: '#fff',
+                    textDecoration: 'none',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    textTransform: 'uppercase',
+                }}
+                className="hover:underline"
+            >
+                View GitHub <Github size={14} />
+            </motion.a>
+        </div>
     </div>
 );
 

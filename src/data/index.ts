@@ -8,7 +8,8 @@ export interface Project {
     tech: string[];
     color: string;
     emoji: string;
-    link: string;
+    LiveLink: string;
+    GitLink: string;
 }
 
 export interface TimelineItem {
@@ -102,11 +103,12 @@ export const PROJECTS: Project[] = [
         id: 1,
         title: "School Management",
         tag: "Full-Stack",
-        desc: "",
-        tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
+        desc: "Developed a full-stack school management system to streamline academic operations including student enrollment, staff management, and course tracking, with a responsive interface and efficient backend API architecture.",
+        tech: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'REST API'],
         color: "#00ffe0",
-        emoji: "",
-        link: "https://schoolmanagement-omega-ten.vercel.app/",
+        emoji: "🏫",
+        LiveLink: "https://schoolmanagement-omega-ten.vercel.app/",
+        GitLink: "https://github.com/Bammytoye/School-Management-.git",
     },
     {
         id: 2,
@@ -116,7 +118,8 @@ export const PROJECTS: Project[] = [
         tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
         color: "#7c3aed",
         emoji: "",
-        link: "https://agency-mu-ten.vercel.app/",
+        LiveLink: "https://agency-mu-ten.vercel.app/",
+        GitLink: "https://agency-mu-ten.vercel.app/",
     },
     {
         id: 3,
@@ -126,7 +129,8 @@ export const PROJECTS: Project[] = [
         tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
         color: "#f97316",
         emoji: "",
-        link: "https://zeke-book-appointment.vercel.app/",
+        LiveLink: "https://zeke-book-appointment.vercel.app/",
+        GitLink: "https://zeke-book-appointment.vercel.app/",
     },
     {
         id: 4,
@@ -136,7 +140,8 @@ export const PROJECTS: Project[] = [
         tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
         color: "#22d3ee",
         emoji: "",
-        link: "https://zeke-book-appointment-admin.vercel.app/",
+        LiveLink: "https://zeke-book-appointment-admin.vercel.app/",
+        GitLink: "https://zeke-book-appointment-admin.vercel.app/",
     },
     {
         id: 5,
@@ -146,7 +151,8 @@ export const PROJECTS: Project[] = [
         tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
         color: "#ec4899",
         emoji: "",
-        link: "https://zeke-healthcare-frontend.vercel.app/",
+        LiveLink: "https://zeke-healthcare-frontend.vercel.app/",
+        GitLink: "https://zeke-healthcare-frontend.vercel.app/",
     },
     {
         id: 6,
@@ -156,7 +162,8 @@ export const PROJECTS: Project[] = [
         tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
         color: "#84cc16",
         emoji: "",
-        link: "https://zeke-healthcare-admin.vercel.app/",
+        LiveLink: "https://zeke-healthcare-admin.vercel.app/",
+        GitLink: "https://zeke-healthcare-admin.vercel.app/",
     },
     {
         id: 7,
@@ -166,7 +173,8 @@ export const PROJECTS: Project[] = [
         tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
         color: "#f43f5e",
         emoji: "",
-        link: "https://valentine-blue-zeta.vercel.app/",
+        LiveLink: "https://valentine-blue-zeta.vercel.app/",
+        GitLink: "https://valentine-blue-zeta.vercel.app/",
     },
     {
         id: 8,
@@ -176,7 +184,8 @@ export const PROJECTS: Project[] = [
         tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
         color: "#6366f1",
         emoji: "",
-        link: "https://zeke-chat-gpt3.vercel.app/",
+        LiveLink: "https://zeke-chat-gpt3.vercel.app/",
+        GitLink: "https://zeke-chat-gpt3.vercel.app/",
     },
     {
         id: 9,
@@ -186,7 +195,8 @@ export const PROJECTS: Project[] = [
         tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
         color: "#10b981",
         emoji: "",
-        link: "https://vue-todo-list-mauve.vercel.app/",
+        LiveLink: "https://vue-todo-list-mauve.vercel.app/",
+        GitLink: "https://vue-todo-list-mauve.vercel.app/",
     },
     {
         id: 10,
@@ -196,7 +206,8 @@ export const PROJECTS: Project[] = [
         tech: ['React', 'Nodejs', 'PostgreSQl', 'TailwindCss'],
         color: "#8b5cf6",
         emoji: "",
-        link: "https://nextjs-todo-list-indol.vercel.app/",
+        LiveLink: "https://nextjs-todo-list-indol.vercel.app/",
+        GitLink: "https://nextjs-todo-list-indol.vercel.app/",
     },
 ];
 
@@ -204,28 +215,22 @@ export const PROJECTS: Project[] = [
 
 export const TIMELINE: TimelineItem[] = [
     {
-        year: "2024",
-        role: "Senior Frontend Engineer",
-        company: "TechNova Labs",
-        desc: "Led migration of monolith to micro-frontend architecture, reducing bundle size by 40%.",
-    },
-    {
-        year: "2022",
-        role: "Full-Stack Developer",
-        company: "Stackify Inc.",
-        desc: "Built scalable SaaS platform from zero to 10k users. TypeScript, Node, and PostgreSQL.",
+        year: "2025",
+        role: "Frontend Developer",
+        company: "Self-Employed",
+        desc: "Worked collaboratively with frontend and backend developers to build and deploy full-stack healthcare web applications, focusing on responsive UI, API integration, and smooth user experience.",
     },
     {
         year: "2020",
         role: "Frontend Developer",
-        company: "CreativeWeb Studio",
-        desc: "Delivered 30+ client projects. Specialized in interactive animations and WebGL experiences.",
+        company: "Zeke Tech",
+        desc: "Delivered some client projects, building responsive web interfaces, reusable UI components, and interactive user experiences for diverse business needs.",
     },
     {
         year: "2018",
         role: "Freelance Developer",
         company: "Self-Employed",
-        desc: "Started freelancing building custom websites and REST APIs for startups and SMEs.",
+        desc: "Started freelancing by developing custom websites and RESTful APIs for startups and SMEs, focusing on responsive design, performance, and client requirements."
     },
 ];
 
