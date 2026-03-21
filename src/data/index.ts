@@ -238,13 +238,13 @@ export const TIMELINE: TimelineItem[] = [
         desc: "Independently designed and developed Amazon website for a client from scratch, handling UI/UX design, frontend architecture, and deployment while ensuring responsive and user-friendly experiences across devices.",
     },
     {
-        year: "2020",
+        year: "2023",
         role: "Frontend Developer",
         company: "Zeke Tech",
         desc: "Delivered some client projects, building responsive web interfaces, reusable UI components, and interactive user experiences for diverse business needs.",
     },
     {
-        year: "2018",
+        year: "2023",
         role: "Freelance Developer",
         company: "Self-Employed",
         desc: "Started freelancing by developing custom websites and RESTful APIs for startups and SMEs, focusing on responsive design, performance, and client requirements.",
@@ -256,7 +256,7 @@ export const TIMELINE: TimelineItem[] = [
 export const CONTACT_INFO: ContactInfo[] = [
     { icon: "👨🏻‍💻", label: "WhatsApp", val: "+234(0)8169885711" },
     { icon: "📧", label: "Email", val: "bamigbalatoyese@gmail.com" },
-    { icon: "💼", label: "LinkedIn", val: "linkedin.com/in/bamigbalaEzekiel" },
+    { icon: "💼", label: "LinkedIn", val: "linkedin.com/in/bamigbala-ezekiel/" },
     { icon: "💻", label: "GitHub", val: "github.com/Bammytoye" },
     { icon: "📍", label: "Location", val: "Remote — Worldwide" },
 ];
@@ -264,7 +264,7 @@ export const CONTACT_INFO: ContactInfo[] = [
 // ─── Stats ────────────────────────────────────────────────────────────────────
 
 export const STATS = [
-    { n: 3, suf: "+", label: "Years Exp." },
+    { n: 2, suf: "+", label: "Years Exp." },
     { n: 13, suf: "+", label: "Projects Done" },
     { n: 5, suf: "+", label: "Happy Clients" },
 ];
