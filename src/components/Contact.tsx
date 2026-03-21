@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CONTACT_INFO } from '../data';
-import emailjs from 'emailjs-com';
+import emailjs from "@emailjs/browser";
 
 interface FormData {
     name: string;
