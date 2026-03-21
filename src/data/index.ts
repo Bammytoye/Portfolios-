@@ -200,14 +200,25 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 10,
-        title: "Amazon Website",
+        title: "Amazon Website (Freelance Project)",
         tag: "Frontend",
-        desc: "",
-        tech: ["React", "Nodejs", "PostgreSQl", "TailwindCss"],
+        desc: "A fully responsive Amazon-inspired e-commerce web application built from scratch, featuring product listing UI, cart design, and modern e-commerce layout with smooth user experience and clean component structure.",
+        tech: ["React", "TailwindCss"],
         color: "#8b5cf6",
-        emoji: "",
-        LiveLink: "https://nextjs-todo-list-indol.vercel.app/",
+        emoji: "🛒",
+        LiveLink: "",
         GitLink: "https://github.com/PelvinDreams/Amazon_1.git",
+    },
+    {
+        id: 11,
+        title: "Workout Website",
+        tag: "Full-Stack",
+        desc: "A full-stack workout tracker built with the MERN stack. Users can sign up, log in, and manage their workouts adding, tracking, and deleting exercises with load and reps. Features JWT authentication, protected routes, and a clean responsive UI.",
+        tech: ["React", "Nodejs", "MongoDB", "TailwindCSS"],
+        color: "#16a34a",
+        emoji: "🏋️",
+        LiveLink: "https://workout-beta-blush.vercel.app/",
+        GitLink: "https://github.com/Bammytoye/New-Workout",
     },
 ];
 
@@ -219,6 +230,12 @@ export const TIMELINE: TimelineItem[] = [
         role: "Frontend Developer",
         company: "Self-Employed",
         desc: "Worked collaboratively with frontend and backend developers to build and deploy full-stack healthcare web applications, focusing on responsive UI, API integration, and smooth user experience.",
+    },
+    {
+        year: "2024",
+        role: "Frontend Developer",
+        company: "Freelance",
+        desc: "Independently designed and developed Amazon website for a client from scratch, handling UI/UX design, frontend architecture, and deployment while ensuring responsive and user-friendly experiences across devices.",
     },
     {
         year: "2020",
@@ -237,6 +254,7 @@ export const TIMELINE: TimelineItem[] = [
 // ─── Contact ──────────────────────────────────────────────────────────────────
 
 export const CONTACT_INFO: ContactInfo[] = [
+    { icon: "👨🏻‍💻", label: "WhatsApp", val: "+234(0)8169885711" },
     { icon: "📧", label: "Email", val: "bamigbalatoyese@gmail.com" },
     { icon: "💼", label: "LinkedIn", val: "linkedin.com/in/bamigbalaEzekiel" },
     { icon: "💻", label: "GitHub", val: "github.com/Bammytoye" },
