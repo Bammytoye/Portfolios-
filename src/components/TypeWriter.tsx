@@ -36,7 +36,10 @@ const TypeWriter: React.FC<TypeWriterProps> = ({ words }) => {
     }, [text, isDeleting, idx, words]);
 
     return (
-        <span className='text-[65px]' style={{ color: 'var(--accent)', fontFamily: "'Space Mono', monospace" }}>
+        <span
+            className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[65px]'
+            style={{ color: 'var(--accent)', fontFamily: "'Space Mono', monospace" }}
+        >
             {text}
             <span style={{ animation: 'blink 1s infinite', color: 'var(--accent)' }}>|</span>
         </span>

@@ -220,6 +220,17 @@ export const PROJECTS: Project[] = [
         LiveLink: "https://workout-beta-blush.vercel.app/",
         GitLink: "https://github.com/Bammytoye/New-Workout",
     },
+    {
+        id: 11,
+        title: "University ChatBot",
+        tag: "Frontend",
+        desc: "An empirical research prototype exploring how emotion-adaptive AI chatbots influence customer satisfaction. Features three experimental conditions — basic, emotion-adaptive, and anthropomorphic — built with React and powered by a large language model API. Includes a researcher control panel, post-interaction survey, and CSV data export.",
+        tech: ["React", "TailwindCSS", "Groq API", "LLM"],
+        color: "#16a34a",
+        emoji: "🤖",
+        LiveLink: "https://university-support-assistant-chatbo.vercel.app/",
+        GitLink: "https://github.com/Bammytoye/University-Support-Assistant.git",
+    },
 ];
 
 // ─── Timeline ─────────────────────────────────────────────────────────────────

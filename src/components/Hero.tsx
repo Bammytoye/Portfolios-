@@ -56,8 +56,8 @@ const Hero: React.FC = () => {
                         <div className="tag my-10">Available for work</div>
 
                         <h1
+                            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
                             style={{
-                                fontSize: 'clamp(60px, 6vw, 5rem)',
                                 fontWeight: 800,
                                 lineHeight: 1.05,
                                 marginBottom: '1rem',
