@@ -9,6 +9,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Foter';
 import useReveal from './hooks/useReveal';
+import ScrollToTop from './components/Scrolltotop ';
 
 const GlowDivider: React.FC = () => <div className="glow-line" />;
 
@@ -53,7 +54,8 @@ const App: React.FC = () => {
         <GlowDivider />
         <Contact />
       </main>
-
+      
+      <ScrollToTop />
       <Footer />
     </div>
   );
