@@ -21,7 +21,6 @@ export interface TimelineItem {
 
 export interface SkillItem {
     name: string;
-    level: number;
 }
 
 export interface ContactInfo {
@@ -45,38 +44,38 @@ export type NavLink = (typeof NAV_LINKS)[number];
 
 export const SKILLS: Record<string, SkillItem[]> = {
     Frontend: [
-        { name: "React / Next.js", level: 95 },
-        { name: "JavaScript / TypeScript", level: 82 },
-        { name: "Tailwind CSS / CSS", level: 92 },
-        { name: "HTML5", level: 95 },
-        { name: "CSS Animations / Frame Motion", level: 88 },
-        { name: "Redux / Zustand", level: 75 },
-        { name: "Figma / UI Prototyping", level: 65 },
-        { name: "Vue", level: 78 },
+        { name: "React / Next.js" },
+        { name: "JavaScript / TypeScript" },
+        { name: "Tailwind CSS / CSS" },
+        { name: "HTML5" },
+        { name: "CSS Animations / Frame Motion" },
+        { name: "Redux / Zustand" },
+        { name: "Figma / UI Prototyping" },
+        { name: "Vue" },
     ],
 
     Backend: [
-        { name: "Node.js / Express", level: 95 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 80 },
-        { name: "GraphQL", level: 70 },
-        { name: "REST API Design", level: 85 },
-        { name: "SQL", level: 85 },
-        { name: "Authentication (JWT / OAuth / Firebase)", level: 70 },
+        { name: "Node.js / Express" },
+        { name: "PostgreSQL" },
+        { name: "MongoDB" },
+        { name: "GraphQL" },
+        { name: "REST API Design" },
+        { name: "SQL" },
+        { name: "Authentication (JWT / OAuth / Firebase)" },
     ],
 
     Tools: [
-        { name: "Git / GitHub", level: 90 },
-        { name: "VS Code ", level: 85 },
-        { name: "Postman / Insomnia", level: 80 },
-        { name: "ESLint / Prettier ", level: 70 },
-        { name: "Figma / Adobe XD", level: 65 },
+        { name: "Git / GitHub" },
+        { name: "VS Code " },
+        { name: "Postman / Insomnia" },
+        { name: "ESLint / Prettier " },
+        { name: "Figma / Adobe XD" },
     ],
     Other: [
-        { name: "WebSockets / Socket.io", level: 65 },
-        { name: "Realtime Apps", level: 60 },
-        { name: "SEO & Performance Optimization", level: 70 },
-        { name: "Testing & Debugging", level: 70 },
+        { name: "WebSockets / Socket.io" },
+        { name: "Realtime Apps" },
+        { name: "SEO & Performance Optimization" },
+        { name: "Testing & Debugging" },
     ],
 };
 
