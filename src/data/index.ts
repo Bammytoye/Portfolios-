@@ -231,6 +231,17 @@ export const PROJECTS: Project[] = [
         LiveLink: "https://university-support-assistant-chatbo.vercel.app/",
         GitLink: "https://github.com/Bammytoye/University-Support-Assistant.git",
     },
+    {
+        id: 12,
+        title: "Zeke Portfolio",
+        tag: "Frontend",
+        desc: "A clean, modern portfolio website designed to showcase projects, skills, and experience with a focus on smooth interactions and a polished user interface.",
+        tech: ["React", "TailwindCSS", "Vercel"],
+        color: "#16a34a",
+        emoji: "🗂️",
+        LiveLink: "https://zekeportfolios.vercel.app/",
+        GitLink: "https://github.com/Bammytoye/Portfolios-.git",
+    }
 ];
 
 // ─── Timeline ─────────────────────────────────────────────────────────────────

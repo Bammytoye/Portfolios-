@@ -12,6 +12,10 @@ const Hero: React.FC = () => {
         document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const handleDownloadCV = (): void => {
+        window.open('/BAMIGBALA EZEKIEL ADETOYESE.pdf', '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <section
             id="about"
@@ -88,6 +92,60 @@ const Hero: React.FC = () => {
                             </button>
                             <button className="btn-secondary" onClick={() => scrollTo('Contact')}>
                                 Get In Touch
+                            </button>
+
+                            {/* ✅ Download CV Button */}
+                            <button
+                                onClick={handleDownloadCV}
+                                style={{
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '0.5rem',
+                                    padding: '0.75rem 1.5rem',
+                                    borderRadius: '8px',
+                                    border: '1px solid rgba(0,255,224,0.35)',
+                                    background: 'rgba(0,255,224,0.06)',
+                                    color: 'var(--accent)',
+                                    fontWeight: 600,
+                                    fontSize: '0.95rem',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.25s ease',
+                                    fontFamily: 'inherit',
+                                    letterSpacing: '0.02em',
+                                    backdropFilter: 'blur(4px)',
+                                }}
+                                onMouseEnter={e => {
+                                    const el = e.currentTarget;
+                                    el.style.background = 'rgba(0,255,224,0.14)';
+                                    el.style.borderColor = 'rgba(0,255,224,0.7)';
+                                    el.style.boxShadow = '0 0 18px rgba(0,255,224,0.2)';
+                                    el.style.transform = 'translateY(-1px)';
+                                }}
+                                onMouseLeave={e => {
+                                    const el = e.currentTarget;
+                                    el.style.background = 'rgba(0,255,224,0.06)';
+                                    el.style.borderColor = 'rgba(0,255,224,0.35)';
+                                    el.style.boxShadow = 'none';
+                                    el.style.transform = 'translateY(0)';
+                                }}
+                            >
+                                {/* Download icon */}
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2.2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <polyline points="7 10 12 15 17 10" />
+                                    <line x1="12" y1="15" x2="12" y2="3" />
+                                </svg>
+                                Download CV
                             </button>
                         </div>
 

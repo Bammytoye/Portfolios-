@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                     <span style={{ color: 'var(--accent2)' }}>/&gt;</span>
                 </div>
 
-                {/* Desktop links */}
+                {/* Desktop links — md and above */}
                 <div className="hidden md:flex items-center gap-8">
                     {NAV_LINKS.map((link: NavLink) => (
                         <button
@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                     </button>
                 </div>
 
-                {/* Mobile hamburger */}
+                {/* Mobile hamburger — sm only */}
                 <button
                     className="md:hidden"
                     style={{
@@ -90,9 +90,10 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                 </button>
             </div>
 
-            {/* Mobile menu */}
+            {/* Mobile menu — sm only */}
             {menuOpen && (
                 <div
+                    className="md:hidden"
                     style={{
                         position: 'absolute',
                         top: '100%',
@@ -126,6 +127,49 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                             {link}
                         </button>
                     ))}
+
+                    {/* Download CV — mobile only, not on md/lg */}
+                    <button
+                        onClick={() => {
+                            window.open('/BAMIGBALA EZEKIEL ADETOYESE.pdf', '_blank', 'noopener,noreferrer');
+                            setMenuOpen(false);
+                        }}
+                        style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: '0.5rem',
+                            marginTop: '1rem',
+                            padding: '0.75rem 1.2rem',
+                            width: '100%',
+                            borderRadius: '8px',
+                            border: '1px solid rgba(0,255,224,0.35)',
+                            background: 'rgba(0,255,224,0.06)',
+                            color: 'var(--accent)',
+                            fontFamily: "'Space Mono', monospace",
+                            fontSize: '0.8rem',
+                            letterSpacing: '0.08em',
+                            fontWeight: 600,
+                            cursor: 'pointer',
+                        }}
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="15"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Download CV
+                    </button>
                 </div>
             )}
         </nav>
