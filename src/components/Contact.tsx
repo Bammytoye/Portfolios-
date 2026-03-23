@@ -119,7 +119,7 @@ const Contact: React.FC = () => {
 
                 {/* HEADER */}
                 <div className="text-center mb-16">
-                    <div className="tag mb-4">Contact</div>
+                    <div className="tag mb-4" style={{ display: 'inline-block' }}>Contact</div>
                     <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 800 }}>
                         Let's <span className="gradient-text">Work Together</span>
                     </h2>

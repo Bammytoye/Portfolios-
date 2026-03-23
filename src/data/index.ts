@@ -247,19 +247,25 @@ export const PROJECTS: Project[] = [
 
 export const TIMELINE: TimelineItem[] = [
     {
+        year: "2026",
+        role: "Frontend Developer",
+        company: "University Assignment",
+        desc: "Designed and built an AI-powered university chatbot from the ground up architected the conversation flow, integrated a large language model API for intelligent responses, and crafted a clean, responsive frontend interface for seamless student interaction.",
+    },
+    {
         year: "2025",
         role: "Frontend Developer",
         company: "Self-Employed",
         desc: "Worked collaboratively with frontend and backend developers to build and deploy full-stack healthcare web applications, focusing on responsive UI, API integration, and smooth user experience.",
     },
     {
-        year: "2024",
+        year: "2025",
         role: "Frontend Developer",
         company: "Freelance",
         desc: "Independently designed and developed Amazon website for a client from scratch, handling UI/UX design, frontend architecture, and deployment while ensuring responsive and user-friendly experiences across devices.",
     },
     {
-        year: "2023",
+        year: "2025",
         role: "Frontend Developer",
         company: "Zeke Tech",
         desc: "Delivered some client projects, building responsive web interfaces, reusable UI components, and interactive user experiences for diverse business needs.",
