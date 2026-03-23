@@ -199,7 +199,7 @@ const Contact: React.FC = () => {
 
                             <br /><br />
 
-                            <button type="submit" className="btn-primary" disabled={loading}>
+                            <button type="submit" className="text-white hover:text-green-400 py-3 px-2 border bg-transparent hover:bg-transparent hover:border-green-400" disabled={loading}>
                                 {loading ? 'Sending...' : 'Send Message →'}
                             </button>
                         </form>
